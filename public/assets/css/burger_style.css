@@ -1,7 +1,32 @@
+body {
+  background: #FF9446;
+  background: -webkit-linear-gradient(top right, #FF9446, #F3FF01);
+  background: -moz-linear-gradient(top right, #FF9446, #F3FF01);
+  background: linear-gradient(to bottom left, #FF9446, #F3FF01);
+}
+
+.burgerImg {
+  height: 50px;
+  width: 50px;
+}
+
+.burgerImgTitle {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+}
+
+.notDevouredContainer {
+  display: flex;
+}
+
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    list-style-type: none;
   }
   
   .label {
@@ -11,7 +36,6 @@ li {
   .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
   }
   
   .form-group {
