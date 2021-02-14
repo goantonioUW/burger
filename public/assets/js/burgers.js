@@ -1,3 +1,4 @@
+//Create new burger
 $(".create-form").on("submit", function (e) {
     e.preventDefault()
     let textBox = $("#bn").val()
@@ -10,6 +11,7 @@ $(".create-form").on("submit", function (e) {
     })
 })
 
+//Devour burger
 $(".devouredBtn").on("click", function (e) {
     e.preventDefault()
     let newBurger = {
@@ -25,6 +27,7 @@ $(".devouredBtn").on("click", function (e) {
     })
 })
 
+  //Return burger
 $(".return").on("click", function (e) {
     e.preventDefault()
     let newBurger = {
@@ -38,4 +41,17 @@ $(".return").on("click", function (e) {
     }).then(function () {
         location.reload()
     })
-})
+});
+
+  //Delete item from the belly
+//   $(".destroy").on("click", function(e) {
+//       e.preventDefault()
+//       let id = $(this).data("id");
+// console.log(id)
+//     $.ajax("/api/burgers/" + id, {
+//       method: "DELETE"
+//     }).then(function() {
+//         location.reload();
+//       }
+//     );
+// });

@@ -86,7 +86,15 @@ var orm = {
 
       cb(result);
     });
-  }
+  },
+
+//   deleteOne(tableName, targetId, cb) {
+//     connection.query("DELETE FROM ?? WHERE id = ?", [tableName, targetId], (err, results) => {
+//         if (err) throw err;
+//         cb(results);
+//     });
+// }
+
 };
 
 // Export the orm object for the model (cat.js).
