@@ -17,7 +17,13 @@ var cat = {
     orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  delete: function(condition, cb){
+    orm.delete("burgers", condition, function (result){
+      cb(result)
+    })
   }
+
 };
 
 // Export the database functions for the controller (catsController.js).

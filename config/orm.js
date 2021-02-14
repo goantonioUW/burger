@@ -88,12 +88,13 @@ var orm = {
     });
   },
 
-//   deleteOne(tableName, targetId, cb) {
-//     connection.query("DELETE FROM ?? WHERE id = ?", [tableName, targetId], (err, results) => {
-//         if (err) throw err;
-//         cb(results);
-//     });
-// }
+  delete(tableName, condition, cb) {
+  var statment =  connection.query("DELETE FROM ?? WHERE " + condition, tableName, (err, results) => {
+        if (err) throw err;
+        cb(results);
+    });
+    console.log(statment.sql)
+}
 
 };
 

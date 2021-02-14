@@ -43,15 +43,16 @@ $(".return").on("click", function (e) {
     })
 });
 
-  //Delete item from the belly
-//   $(".destroy").on("click", function(e) {
-//       e.preventDefault()
-//       let id = $(this).data("id");
-// console.log(id)
-//     $.ajax("/api/burgers/" + id, {
-//       method: "DELETE"
-//     }).then(function() {
-//         location.reload();
-//       }
-//     );
-// });
+//delete burger
+  $(".destroy").on("click", function() {
+     
+      let id = $(this).data("id");
+        console.log(id)
+
+    $.ajax("/api/burgers/" + id, {
+      method: "DELETE"
+    }).then(function() {
+        location.reload();
+      }
+    );
+});
